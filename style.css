@@ -1,0 +1,620 @@
+:root{
+    --light-blue: #2c9ce1;
+    --dark-blue:#1B80BF;
+    --dark-red:#b83143;
+    --other-blue:#66b0e4;
+}
+
+body, html{
+    height:100%;
+
+}
+ul,ol{
+    list-style-type:none;
+}
+
+.who-list{
+    list-style-type: decimal;
+    margin-top:8px;
+    background-color:var(--dark-red);
+    color:white;
+    padding:8px;
+    border-radius:4px;
+    margin-bottom:10px;
+
+}
+
+.about-mcs{
+
+}
+
+.about-mcs p{
+
+}
+
+.who small{
+    display: block;
+}
+
+.about-mcs p, .about-mcs h2, .who small{
+    margin-bottom:8px;
+}
+
+.who-list li{
+    display:block;
+    margin-bottom:1px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.list-wrapper{
+    display: grid;
+    margin-bottom:8px;
+}
+
+
+
+*{
+    font-family: 'Roboto', -apple-system, sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited, a{
+    color:inherit;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+}
+
+
+img{
+    display: block;
+}
+
+
+#menu{
+    gap:5px;
+    cursor: pointer;
+    margin:20px auto 0 15px;
+    height:fit-content;
+
+}
+
+#menu:hover #nav-list{
+    display: inline;
+}
+
+#menu ul{
+    display: none;
+    position:absolute;
+    right:15px;
+    top:5px;
+    background-color:var(--other-blue);
+    color:white;
+    padding:10px;
+    font-size:20px;
+    width:125px;
+    border:2px solid var(--dark-red);
+    z-index: 1;
+}
+
+
+
+#menu div{
+    height:3px;
+    width: 25px;
+    background-color: black;
+    border-radius:4px;
+}
+
+#menu li{
+    margin-bottom:2px;
+}
+
+#menu a:hover{
+    color:var(--dark-red)
+
+}
+
+
+
+.selected{
+    text-decoration: underline var(--dark-red);
+    color:var(--dark-red)
+}
+
+.nav-options{
+    gap:25px;
+}
+
+h1,h2,h3,h4,h5,h6,p,body,html,ul,ol{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    padding:15px 10px 10px 10px;
+    /*border-bottom:2px solid black;*/
+
+}
+
+nav img{
+    height:150px;
+
+}
+
+.service-header{
+    background:linear-gradient(var(--dark-red), #CF4D5E);
+    color:white;
+    font-size:24px;
+    padding:5px;
+}
+
+.banner{
+    background-image: url("images/CloudImageResized.png");
+    background-position: center;
+    position:relative;
+    background-repeat: no-repeat;
+    align-content: center;
+    text-align: center;
+    color:white;
+
+
+}
+
+.banner h1{
+    display: inline;
+}
+
+
+.icon{
+    width:55px;
+    height:55px;
+}
+
+.intro{
+    text-align: center;
+}
+
+.intro h2{
+    font-size:36px;
+    margin-bottom:3px;
+
+}
+
+.intro p{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.red{
+    color:#b83143;
+}
+
+.l-blue{
+    color:var(--light-blue)
+}
+
+.d-blue{
+    color:var(--dark-blue)
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:0 auto 15px auto;
+    width:80%;
+    gap:10px;
+
+
+}
+
+.service-box{
+    border:1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    padding:10px;
+    font-size:14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.service-box .icon{
+    margin:0 auto 0 auto;
+}
+
+.learn-more{
+    background-color:var(--light-blue);
+    color:white;
+    border:2px solid white;
+    width:80%;
+    margin:0 auto;
+    padding:5px;
+    text-align: center;
+    font-size:18px;
+}
+
+
+
+.banner {
+    margin-bottom:15px;
+}
+.learn-more:hover{
+    border:2px solid var(--light-blue);
+    color:var(--light-blue);
+    background-color: #fff;
+}
+
+.about-us{
+    padding:0 5px 5px 5px;
+    font-size:22px;
+}
+
+.about-us p{
+    margin-bottom:8px;
+}
+
+.services{
+    margin-bottom:25px;
+}
+
+
+.services p {
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.info-table{
+    background-color:var(--dark-red);
+    color:white;
+}
+
+.info-cell{
+    width:100%;
+}
+
+.info-cell img{
+    width:100%;
+}
+
+.info-cell{
+    text-align: center;
+    align-items: center;
+}
+
+.info-cell p{
+    font-family:'Playpen Sans', cursive;
+}
+
+main{
+    padding:10px;
+}
+
+.who p{
+    font-size:16px;
+}
+
+
+.who h1{
+    margin-bottom:8px;
+}
+
+h1{
+    font-size:2.75em;
+}
+
+
+
+
+li{
+    font-size:1.5em;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width:767px)
+{
+    .list-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .list-wrapper img{
+        display: none;
+    }
+
+
+    .info-cell p{
+        padding-top:25px;
+        font-size:20px;
+    }
+    nav img{
+        width:75%;
+        height:75px;
+    }
+
+    #nav-list{
+        display: none;
+    }
+
+    #nav-list{
+        font-size:16px;
+    }
+    nav{
+        margin-bottom:2px;
+    }
+    #menu{
+        display: flex;
+    }
+
+    .banner{
+        height:125px;
+    }
+
+    .banner h1{
+        font-size:32px;
+    }
+
+
+
+
+    .service-header{
+        margin-bottom:8px;
+    }
+
+    .service-list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-box .icon{
+        width:75px;
+        height:75px;
+    }
+
+    .service-box div{
+        margin-top:8px;
+    }
+
+    .service-box{
+        font-size:12px;
+        max-height:140px;
+        min-height:140px;
+    }
+
+
+
+}
+
+@media screen and (min-width:768px){
+    #menu div{
+        display: none;
+    }
+
+    #menu ul{
+        border:none;
+    }
+
+    .who p{
+        font-size:22px;
+    }
+    .who small, .who p{
+        margin-bottom: 15px;
+    }
+
+
+
+    .who h2{
+        font-size:28px;
+    }
+
+    .list-wrapper{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom:15px;
+    }
+
+    hr{
+        margin-bottom:15px;
+        margin-top:15px;
+    }
+
+    .list-wrapper img{
+        margin:auto auto;
+        width:70%;
+    }
+
+    #menu ul{
+        display: inline;
+        position:static;
+        background-color:white;
+        color:var(--other-blue);
+        width:fit-content;
+        font-size:24px;
+        font-weight: bold;
+    }
+
+    #menu{
+        margin:auto auto;
+    }
+
+    li{
+        display: inline;
+        margin:0 5px 0 0;
+    }
+
+    .info-cell p{
+        font-size:2em;
+        padding-top:10%;
+    }
+
+    .intro h2{
+        font-size:2.5em;
+    }
+
+    .intro p, .services p{
+        max-width:75%;
+        margin:0 auto 10px auto;
+
+    }
+
+    .services p{
+        margin-top:15px;
+        margin-bottom:20px;
+    }
+
+    .banner{
+        font-size:1.75em;
+        height:175px;
+    }
+
+    nav img{
+        width:35%;
+    }
+
+    .service-header{
+        width:80%;
+        margin:0 auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+     li{
+         margin:0 15px 0 0;
+     }
+
+    .who{
+        padding:15px;
+    }
+
+    .service-box .icon{
+        height:100px;
+        width:100px;
+    }
+
+    .who p{
+        font-size:24px;
+    }
+
+    nav img{
+        height:100px;
+        width:30%;
+    }
+
+
+    #menu ul{
+        font-size:20px;
+    }
+
+    .who h2{
+        font-size:36px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    nav img{
+        height:100px;
+    }
+
+    #menu ul{
+        font-size:18px;
+    }
+
+
+    .service-box{
+        font-size:24px;
+    }
+
+    .service-list{
+        gap:15px;
+    }
+    .service-box .icon{
+        width:100px;
+        height:100px;
+    }
+
+    .services p{
+        font-size:24px;
+    }
+
+    .intro p{
+        font-size:24px;
+    }
+
+
+    .banner{
+        height:175px;
+    }
+
+    .info-cell p{
+        padding-top:10%;
+        font-size:36px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    nav img{
+        width:25%;
+    }
+
+   
+    .intro p{
+        width:55%;
+        font-size:28px;
+    }
+
+    .service-box{
+        font-size:20px;
+    }
+
+    .learn-more{
+        font-size:24px;
+    }
+
+    .who{
+        width:60%;
+        margin:0 auto;
+    }
+
+    .who p{
+        font-size:28px;
+        margin-bottom:20px;
+    }
+
+
+    .service-box .icon{
+        width:125px;
+        height:125px;
+        margin-bottom:5px;
+    }
+
+    .service-list, .learn-more{
+        width:55%;
+    }
+
+    .service-header{
+        width:60%;
+    }
+    .services p{
+        width:55%;
+        font-size:32px;
+    }
+
+    nav{
+        padding-left:19.5%;
+    }
+}
+
+footer{
+    background-color: var(--dark-red);
+    color:white;
+}
